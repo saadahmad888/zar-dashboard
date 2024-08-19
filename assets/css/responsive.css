@@ -1,0 +1,112 @@
+@media (max-width: 4000px) and (min-width:768px) {
+    body {
+        overflow: auto !important;
+    }
+
+    #section_right_side {
+        padding-right: 50px;
+    }
+
+    #navbar_position {
+        position: fixed;
+        width: 100%;
+    }
+
+    #main_page_height {
+        padding-top: 100px;
+    }
+
+    .offcanvas_backdrop::before {
+        display: none;
+    }
+
+    #navbar_brand_dashboard {
+        margin-left: 10px;
+    }
+
+    footer {
+        width: calc(100% - 70px);
+    }
+
+    #offcanvasExample {
+        transform: none;
+        visibility: visible;
+        z-index: 5;
+    }
+
+    #right-icon {
+        transition: 0.5s all;
+    }
+
+    .sidebar-link[aria-expanded="true"] #right-icon {
+        transform: rotate(180deg);
+    }
+
+    #sidebar_brand .brand {
+        font-size: 20px;
+        padding-left: 15px;
+    }
+
+    #section_right_side .wrapper {
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (max-width:1280px) and (min-width:1100px) {
+    .container-fluid .row .col-6 .wrapper {
+        padding-left: 85px;
+    }
+}
+
+@media only screen and (max-width:1099px) and (min-width:992px) {
+    .container-fluid .row .col-6 .wrapper {
+        padding-left: 55px;
+    }
+}
+
+@media only screen and (max-width:568px) and (min-width:200px) {
+    .container-fluid .row .col-6 .wrapper {
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width:768px) and (min-width:425px) {
+    #section_right_side {
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    #preloader {
+        background-size: 10% !important;
+    }
+
+    #main_page_height {
+        padding-left: 0 !important;
+    }
+
+    #offcanvasExample,
+    #offcanvasExample:hover {
+        top: 0;
+        left: 0;
+        width: 80%;
+    }
+
+    .sidebar-link span {
+        visibility: visible !important;
+    }
+
+    #sidebar_brand {
+        display: flex;
+    }
+
+    .bottom-links {
+        display: block;
+    }
+
+    footer {
+        width: 100%;
+    }
+}

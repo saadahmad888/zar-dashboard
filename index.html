@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Zar By Sarmaaya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+
+    <div id="preloader"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar_position" class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <!-- offcanvas-trigger -->
+            <button class="navbar-toggler me-2 sidebar-btn" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- offcanvas-trigger -->
+            <a id="navbar_brand_dashboard" class="navbar-brand me-auto" href="#">
+                <img src="assets/images/logo.svg" alt="">
+            </a>
+
+            <div class="header-nav">
+                <p class="danger-tag py-2 px-3 text-center d-none d-lg-block d-md-block">
+                    Non-Filer
+                </p>
+                <a href="" class="plan-btn  d-none d-lg-block d-md-block">
+                    Free Plan<i class="fa-regular fa-arrow-right ms-2"></i>
+                </a>
+
+                <div class="dropdown">
+                    <button class="regular-btn " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end notification-drpdwn">
+                        <div class="header">
+                            <p class="heading">
+                                Notification
+                            </p>
+                            <div class="">
+                                <a href="" class="">
+                                    See All
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p class="mb-0 text">
+                                No notifications found!
+                            </p>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="dropdown  d-none d-lg-block d-md-block">
+                    <button class="user-btn " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1723852800&semt=ais_hybrid"
+                            alt="">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end profile-drpdwn">
+                        <div class="header">
+                            <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1723852800&semt=ais_hybrid"
+                                alt="">
+                            <div class="">
+                                <a href="" class="">
+                                    fator45847@brinkc.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="links-box">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-regular fa-gear"></i>Setting
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-regular fa-file-contract"></i>Terms And Conditions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="red">
+                                        <i class="fa-regular fa-arrow-right-from-bracket"></i>Log Out
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar ends here -->
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div id="scrollbar_side" class="offcanvas-body">
+            <nav class="nav-dark">
+                <div id="sidebar_brand">
+                    <img src="assets/images/logo.svg" alt="">
+                    <button type="button" class="sidebar-close-btn" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                            class="fa-regular fa-angle-left"></i></button>
+                </div>
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="nav-link sidebar-link active" role="button">
+                            <i class="fa-regular fa-objects-column me-3"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link sidebar-link" role="button">
+                            <i class="fal fa-icons me-3"></i>
+                            <span>Icons</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link sidebar-link" role="button">
+                            <i class="fa-regular fa-bookmark me-3"></i>
+                            <span>Maps</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#collapseExample_notifications"
+                            role="button" aria-expanded="false" aria-controls="collapseExample_notifications">
+                            <i class="fa-regular fa-circle-dollar me-3"></i>
+                            <span>Notifications</span>
+                            <span id="right-icon" class="ms-auto"><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                        <div class="collapse" id="collapseExample_notifications">
+                            <ul class="navbar-nav ps-3">
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <i class="fal fa-sliders-v me-2"></i>
+                                        <span>Overview</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <i class="fal fa-project-diagram me-2"></i>
+                                        <span>Projects</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link sidebar-link" role="button">
+                            <i class="fa-regular fa-gear me-3"></i>
+                            <span>User Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link sidebar-link" role="button">
+                            <i class="fal fa-list-ul me-3"></i>
+                            <span>Table List</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link sidebar-link" role="button">
+                            <i class="fal fa-text me-3"></i>
+                            <span>Typography</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="bottom-links">
+                    <div class="user-box">
+                        <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1723852800&semt=ais_hybrid"
+                            alt="">
+                        <a href="">
+                            fator45847@brinkc.com
+                        </a>
+                    </div>
+                    <a href="" class="logout-btn">
+                        <i class="fa-regular fa-arrow-right-from-bracket"></i>Log Out
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Offcanvas ends here -->
+
+    <!-- Main Content Start Here -->
+    <div id="main_page_height">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-12 mb-5">
+                    <div class="page-header">
+                        <a href="" class="page-name">
+                            Overview
+                            <span class="line"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12">
+                    <div class="right-side-box">
+                        <div class="text-end">
+                            <a href="" class="outline-primary-btn">
+                                <i class="fa-regular fa-plus me-2"></i>Add Portfolio
+                            </a>
+                        </div>
+                        <div class="right-tabspan-box">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">Watch List</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Alert</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Announcements</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                                    tabindex="0">
+                                <p class="text">
+                                    Information to come…
+                                </p>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <p class="text">
+                                    Information to come…
+                                </p>
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                                    <p class="text">
+                                    Information to come…
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="position-fixed bottom-0 end-0">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="text-lg-start text-md-start text-center">
+                        <img class="logo" src="assets/images/logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <p class="mb-0 copy-right-text text-center">
+                        &copy; 2024 Copyright by <a href="">Sarmaaya</a>
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="text-lg-end text-md-end text-center">
+                        <a href="" class="footer-link d-block">
+                            Terms & Conditions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+:root {
+    --offcanvas-width-close: 70px;
+    --offcanvas-width-open: 270px;
+    --topNavbarHeight: 56px;
+    --primary: #6CE607;
+    --secondary: #26a0da;
+    --white: #fff;
+    --white-light: rgba(255, 255, 255, 0.315);
+    --black: #000;
+    --bg-gradient: linear-gradient(to right, #314755, #26a0da);
+    --bg-gradient-to-bottom: linear-gradient(to bottom, #314755, #26a0da);
+    --text-color: #0f172a;
+    --text-dark: #0D0D0D;
+}
+
+#offcanvasExample {
+    width: var(--offcanvas-width-close);
+    transform: width 0.3s ease;
+    transition: width 0.3s ease;
+    /* Smooth transition for width */
+    position: fixed;
+    top: 69px;
+    left: 0;
+    overflow: hidden;
+}
+
+#offcanvasExample:hover {
+    width: var(--offcanvas-width-open);
+}
