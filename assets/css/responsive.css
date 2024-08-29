@@ -77,6 +77,21 @@
     }
 }
 
+@media only screen and (max-width: 992px) {
+    .auth-page {
+        background-color: #f9fafb;
+    }
+
+    .auth-page .auth-box{
+        box-shadow: none;
+    }
+
+    .auth-page .auth-box .form-side{
+        box-shadow: none;
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 767px) {
 
     #preloader {
